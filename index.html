@@ -1,0 +1,488 @@
+<!-- 正的简历 -->
+<!-- @author: zhengxiaoyao0716 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link rel="shortcut icon" href="http://os.zheng0716.com/static/image/favicon.ico" />
+    <title>正的简历</title>
+    <link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        @media print {
+            body>.page {
+                page-break-after: always;
+            }
+            .noprint {
+                display: none;
+            }
+        }
+        
+        body {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--打印按钮-->
+    <a class="noprint" style="position: absolute; right: 3px; top: 3px; z-index: 1; background: #fff; opacity: 0.8; border: 3px solid #fff; border-radius: 3px; box-shadow: 0px 0px 6px 0px #666;"
+        href="javascript:print();">
+        <i class="fa fa-print" aria-hidden="true"></i> 打印
+    </a>
+    <style>
+        .cover {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cover>.logo {
+            width: 450px;
+            height: 450px;
+        }
+        
+        .cover>img {
+            display: block;
+        }
+        
+        .cover>table {
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        .cover>table>tbody tr>td {
+            padding-top: 30px;
+        }
+        
+        .cover>table>tbody tr>td>i {
+            background: #000;
+            color: #fff;
+            border: 12px solid #000;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        
+        .cover>table>tbody td:last-child {
+            border-bottom: 1px solid #000;
+        }
+    </style>
+    <div class="page cover">
+        <img class="logo" src="./static/image/logo.png">
+        <br>
+        <img src="./static/image/title.png">
+        <br>
+        <table>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-user" aria-hidden="true" style="background-color: #ff5252; border-color: #ff5252;"></i></td>
+                    <td>姓　　名　　</td>
+                    <td>陈正</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-bank" aria-hidden="true" style="background-color: #03A9F4; border-color: #03A9F4;"></i></td>
+                    <td>学　　校　　</td>
+                    <td>北京科技大学</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-phone" aria-hidden="true" style="background-color: #ffeb3b; border-color: #ffeb3b;"></i></td>
+                    <td>联系方式　　</td>
+                    <td>181 0130 1995</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-heart" aria-hidden="true" style="background-color: #4caf50; border-color: #4caf50;"></i></td>
+                    <td>目标岗位　　</td>
+                    <td>游戏Java开发工程师</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr class="noprint">
+    <style>
+        .body {
+            display: flex;
+        }
+        
+        .body>.side_bar {
+            background: #03A9F4 url(./static/image/banner_bg.png);
+            flex: 0 1 250px;
+            position: relative;
+            padding: 30px;
+            text-align: center;
+            height: 1148px;
+        }
+        
+        .body>.side_bar>.corner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            pointer-events: none;
+        }
+        
+        .body>.content {
+            flex: 1 0 500px;
+            background: #fff;
+        }
+        
+        .body>.side_bar>.name {
+            font-family: arial, tahoma, 'Microsoft Yahei', '\5b8b\4f53', sans-serif;
+            color: #fff;
+            /*background: #fff;
+            border: 12px solid #fff;
+            border-radius: 6px;*/
+            margin-bottom: 0;
+        }
+        
+        .body>.side_bar>.spell {
+            color: #fff;
+            display: block;
+            margin-bottom: 12px;
+        }
+        
+        .body>.side_bar>.target {
+            color: #fff;
+            text-align: left;
+            border-bottom: 2px dotted #fff;
+            padding-bottom: 6px;
+            margin-bottom: 0;
+        }
+        
+        .body>.side_bar>.card {
+            margin-top: 3px;
+            color: #fff;
+            text-align: left;
+        }
+        
+        .body>.side_bar>.card>a {
+            color: #fff;
+        }
+        
+        .body>.side_bar>.card>span {
+            display: block;
+        }
+        
+        .body>.side_bar>.card hr {
+            border: none;
+            margin: 0;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .body>.side_bar>.contact {
+            text-align: center;
+            margin: 12px;
+        }
+        
+        .body>.side_bar>.contact>i {
+            background: #fff;
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            line-height: 16px;
+            border: 6px solid #fff;
+            border-radius: 50%;
+        }
+        
+        .body>.side_bar>.contact>p,
+        .body>.side_bar>.contact>a {
+            display: block;
+            margin: 0;
+            color: #fff;
+        }
+        
+        .body .photo {
+            width: 188px;
+            height: 188px;
+            line-height: 188px;
+            border: 6px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+        }
+        
+        .body .photo>img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+    </style>
+    <div class="page body">
+        <div class="side_bar">
+            <div class="corner">
+                <img style="position: absolute; left: 0px;" src="./static/image/banner_corner.png">
+                <img style="position: absolute; left: 0px; bottom: 0px; -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -ms-transform:rotate(-90deg); -o-transform:rotate(-90deg); transform:rotate(-90deg);"
+                    src="./static/image/banner_corner.png">
+                <img style="position: absolute; right: 0px; bottom: 0px; -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg);"
+                    src="./static/image/banner_corner.png">
+                <img style="position: absolute; right: 0px; -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); transform:rotate(90deg);"
+                    src="./static/image/banner_corner.png">
+            </div>
+            <div class="photo"><img src="./static/image/photo.jpg"></div>
+            <h1 class="name">陈 正</h1>
+            <small class="spell">
+                Chen Zheng<br>
+                1995.07.16
+            </small>
+            <h3 class="target"><i class="fa fa-vcard" aria-hidden="true"></i> 自我介绍</h3>
+            <p class="card">
+                热爱编程，精通Python、Js、Java等多门编程语言，有大量编程经验，前后移动PC端全栈。<br> 擅长Git、Docker、PS等常用工具，熟练Linux，追求新技术，愿意学习，拥抱开源。
+                <br> 如果您担心我在说空话，我的GitHub可以证明：
+                <a href="https://github.com/zhengxiaoyao0716">https://github.com/zhengxiaoyao0716</a>
+            </p>
+            <br>
+            <div class="contact">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:1499383852@qq.com">zheng@watersky.net</a>
+            </div>
+            <div class="contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:1499383852@qq.com">+86 181 0130 1995</a>
+            </div>
+            <div class="contact">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>学院路30号北京科技大学</p>
+            </div>
+            <br>
+            <h3 class="target"><i class="fa fa-book" aria-hidden="true"></i> 专业技能</h3>
+            <table class="card">
+                <tbody>
+                    <tr>
+                        <td>Python2&3</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Js|Es|Ts|Node</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HTML|CSS</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Java|C#|C</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Go|SQL|Matlab</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Web前后端</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PC|移动端</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>游戏开发</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>运维(Linux|Docker)</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>美术(PS|3DsMax)</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>音乐(FL Studio)</td>
+                        <td>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <style>
+            .content>div:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            
+            .content>div>h3 {
+                background: #03A9F4;
+                color: #fff;
+                margin: 0;
+                height: 36px;
+                font-size: 30px;
+                line-height: 36px;
+                padding-left: 6px;
+                width: 200px;
+                position: relative;
+            }
+            
+            .content>div>h3::after {
+                position: absolute;
+                right: -17px;
+                border-top: 18px solid transparent;
+                border-left: 18px solid #03A9F4;
+                border-bottom: 18px solid transparent;
+                content: "";
+            }
+            
+            .content>div>p {
+                margin: 0 0 3px 3px;
+            }
+            
+            .content>div>p:not(:last-child) {
+                padding-bottom: 3px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .content>div>p>.second {
+                color: #666;
+            }
+        </style>
+        <div class="content">
+            <div>
+                <h3>教育背景</h3>
+                <p><span class="second">学校：</span>北京科技大学　　　　　　<span class="second">毕业时间：</span>2018年06月</p>
+                <p><span class="second">学院：</span>计算机与通信工程　　　　<span class="second">专业：</span>计算机科学与技术</p>
+                <p><span class="second">现居地：</span>北京　　　　<span class="second">生源地：</span>新疆　　　　<span class="second">祖籍：</span>安徽</p>
+            </div>
+            <div>
+                <h3>校内职务</h3>
+                <p>北科棍舞双节棍社副社长　　　　<span class="second">时间：</span>2016年05月-至今</p>
+                <p><span class="second">职务描述： </span>组织社团活动，联络社团事宜，参加双节棍表演等等</p>
+            </div>
+            <div>
+                <h3>获得荣誉</h3>
+                <p><span class="second">2016.12</span>　　“北科-锐格”杯程序设计创新大赛一等奖</p>
+                <p><span class="second">2015.08</span>　　“创新杯”软件设计与开发大赛一等奖</p>
+                <p><span class="second">2015.07</span>　　北京高校第七届双节棍大赛优胜奖</p>
+                <p><span class="second">2014.08</span>　　北京科技大学2014级本科生军训优秀学员</p>
+            </div>
+            <div>
+                <h3>实践实习</h3>
+                <p><span class="second">1：</span>互联网+校园食堂SRTP创业国家级项目，前期负责Android客户端，成果：今吃啥校园食堂电子菜单，后期转而负责写服务器（python），成果：北科手抓饼预定系统</p>
+                <p><span class="second">2：</span>北京满井智信科技发展有限责任公司，学长的创业公司，在里面跟着大家边学边练，主要面向教学软件系统这一块儿，也接一些外包项目。</p>
+            </div>
+            <div>
+                <h3>项目经验</h3>
+                <p><span class="second">1、</span>互联网+校园食堂，2015 年 8 月 2 日— 8 月 25日，大一暑期社会实践项目，我负责Android客户端开发</p>
+                <p><span class="second">2、</span>SRTP创业项目“莫等闲shop”，2016年6月-2017年1月，Srtp创业比赛的项目，我负责服务器开发，对接微信后台</p>
+                <p><span class="second">3、</span>社会实践微足迹系统，2016年暑期，我负责写后端，整个项目基本由我和另一个负责前端的小伙伴完成，已在北科大上线运营</p>
+                <p><span class="second">4、</span>新版教务管理系统，2016年暑期开始，至今仍在完善，但我已经退出，我负责其中部分模块的开发</p>
+                <p><span class="second">5、</span>社会实践素材共享发布平台，2016年8月，我独立完成</p>
+                <p><span class="second">6、</span>非教师考核系统，2016年11月，我带一个新人完成，已在北科大多个学院上线运营</p>
+                <p><span class="second">#、</span>还有其它一些，记得不是很清楚了。我个人GitHub开源项目截至当前已有50个，https://github.com/zhengxiaoyao0716</p>
+            </div>
+            <div>
+                <h3>游戏经历</h3>
+                <p><span class="second">喜欢的游戏：</span>Minecraft，仙剑奇侠传，塞尔达传说</p>
+                <p><span class="second">喜欢的类型：</span>沙盒、仙侠|古风|日式RPG、开放式ACT、日式AVG（Galgame？）</p>
+                <p>
+                    总得来说，我玩过的游戏很多，各种类型也都有尝试，从小时候的红白机到现在的次世代3A大作，从主机掌机到手游网游。游戏让我体会到了计算机的力量，尤其是沙盒游戏和VR的兴起，让我看到了虚拟世界的曙光。<br>                    完美世界的几场宣讲会，让我深切认识到了完美对游戏的态度，以及完美深厚的实力。我希望能加入完美世界，进入游戏行业，也做出带给他人快乐与感动的，富有文化气息的游戏。
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        addEventListener('load', () => {
+            const company = (v => v && v[2])(location.search.substr(1).match('(^|&)company=([^&]*)(&|$)'));
+            if (company) {
+                // 应聘岗位
+                const apply = document.querySelector('body > div.page.cover > table > tbody > tr:nth-child(4) > td:nth-child(3)');
+                // 定制亮点
+                const counterpart = document.querySelector('body > div.page.body > div.content > div:nth-child(6)');
+                ({
+                    'tencent': () => {
+                        apply.textContent = '软件开发-Web前端开发方向';
+                        counterpart.innerHTML=`
+                            <h3>前端作品展示</h3>
+                            <p><span class="second">1.</span>ES6技术展示，同时也是我个人GitHub项目汇总：<br><a href="https://zhengxiaoyao0716.github.io/github-sortout/">https://zhengxiaoyao0716.github.io/github-sortout/</a></p>
+                            <p><span class="second">2.</span>Jquery,CSS3,Ajax等技术实现的一个资源发布系统的前端Demo：<br><a href="https://zhengxiaoyao0716.github.io/ResourcePublish/">~/ResourcePublish/</a></p>
+                            <p><span class="second">3.</span>施工中的新版个人主页，拿来踩新技术的坑：<a href="https://zhengxiaoyao0716.github.io/acg.html">~/acg.html</a></p>
+                            <p><span class="second">4.</span>开源ReactNative组件，虽然是移动端，但React是前端技术：<br><a href="https://github.com/zhengxiaoyao0716/react-native-modal-dialog">https://github.com/zhengxiaoyao0716/react-native-modal-dialog</a></p>
+                            <p><span class="second">#：</span>您看到的<a href="https://zhengxiaoyao0716.github.io/my-resume/?company=tencent">这份简历</a>，就是我自己用H5写的</p>
+                        `;
+                    },
+                })[company]();
+            }
+        });
+    </script>
+</body>
+
+</html>
