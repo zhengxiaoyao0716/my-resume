@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "start",
     "isShellCommand": true,
-    "args": ["file:///E:/MyProject/Other/Document/Show/resume/index.html"],
+    "args": ["${workspaceRoot}/index.html"],
     "showOutput": "never"
 }

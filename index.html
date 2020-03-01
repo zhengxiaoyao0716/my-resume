@@ -251,129 +251,71 @@
             </div>
             <br>
             <h3 class="target"><i class="fa fa-book" aria-hidden="true"></i> 专业技能</h3>
-            <table class="card">
+            <table id="skill" class="card">
+                <style>
+                    table.card tr[data-skill-score]>td>i {
+                        width: 1.3em;
+                    }
+                </style>
                 <tbody>
-                    <tr>
-                        <td>Python2&3</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </td>
+                    <tr data-skill-score="5">
+                        <td>Java, kotlin, C#</td>
                     </tr>
-                    <tr>
-                        <td>Js|Es|Ts|Node</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </td>
+                    <tr data-skill-score="5">
+                        <td>Es, Ts, Dart, Node</td>
                     </tr>
-                    <tr>
-                        <td>HTML|CSS</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </td>
+                    <tr data-skill-score="4">
+                        <td>Go, Python, C</td>
                     </tr>
-                    <tr>
-                        <td>Go|Java|C</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
+                    <tr data-skill-score="3">
+                        <td>Elixr, Prolog, SQL</td>
                     </tr>
-                    <tr>
-                        <td>C#|SQL|Matlab</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <hr>
-                        </td>
-                    </tr>
-                    <tr>
+                    <tr><td colspan="2"><hr></td></tr>
+                    <tr data-skill-score="5">
                         <td>Web前后端</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </td>
                     </tr>
-                    <tr>
-                        <td>PC|移动端</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
-                    </tr>
-                    <tr>
+                    <tr data-skill-score="5">
                         <td>游戏开发</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
                     </tr>
-                    <tr>
-                        <td colspan="2">
-                            <hr>
-                        </td>
+                    <tr data-skill-score="4">
+                        <td>PC,移动端</td>
                     </tr>
-                    <tr>
-                        <td>运维(Linux|Docker)</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        </td>
+                    <tr><td colspan="2"><hr></td></tr>
+                    <tr data-skill-score="4">
+                        <td>运维(Linux,Docker)</td>
                     </tr>
-                    <tr>
-                        <td>美术(PS|3DsMax)</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
+                    <tr data-skill-score="3.5">
+                        <td>美术(PS,3DsMax)</td>
                     </tr>
-                    <tr>
+                    <tr data-skill-score="3">
                         <td>音乐(FL Studio)</td>
-                        <td>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </td>
                     </tr>
                 </tbody>
+                <script>
+                    addEventListener('load', () => {
+                        const $skillTbs = document.querySelector('table#skill');
+                        const $scoreTrs = $skillTbs.querySelectorAll('tr[data-skill-score]');
+
+                        Array.prototype.forEach.call($scoreTrs, /** @param {HTMLTableRowElement} $tr a */$tr => {
+                            const $td = document.createElement('td');
+                            $tr.appendChild($td);
+
+                            const score = Number.parseFloat($tr.getAttribute('data-skill-score'), 10);
+                            console.log($tr, score);
+                            $tr.title = score > 4 ? '精通' : score > 3 ? '熟练' : '掌握';
+
+                            const solid = score | 0;
+                            for (let index = 0; index < 5; index++) {
+                                const $i = document.createElement('i');
+                                $td.appendChild($i);
+                                $i.setAttribute('aria-hidden', true);
+                                $i.classList.add('fa');
+                                const suffix = index < solid ? '' : index < score ? '-half-o' : '-o';
+                                $i.classList.add(`fa-star${suffix}`);
+                            }
+                        });
+                    });
+                </script>
             </table>
         </div>
         <style>
