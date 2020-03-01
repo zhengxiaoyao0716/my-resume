@@ -75,7 +75,7 @@
         }
     </style>
     <div class="page cover">
-        <img class="logo" src="./static/image/logo.png">
+        <img class="logo" src="./static/image/logo.png" style="padding-top: 16px;">
         <br>
         <img src="./static/image/title.png">
         <br>
@@ -110,6 +110,15 @@
                 </script>
             </tbody>
         </table>
+        <footer style="display: block; width: 100%; margin-top: 3em; text-align: center;">
+            <small id="srcPage" style="color: #ccc;">https://zhengxiaoyao0716.github.io/my-resume</small>
+            <script>
+                addEventListener('load', () => {
+                    const $srcPage = document.querySelector('footer>small#srcPage');
+                    if (location.protocol !== 'file:') $srcPage.textContent = location.href;
+                });
+            </script>
+        </footer>
     </div>
     <hr class="noprint">
     <style>
@@ -119,7 +128,7 @@
 
         .body>.side_bar {
             background: #03A9F4 url(./static/image/banner_bg.png);
-            flex: 0 1 250px;
+            flex: 0 1 300px;
             position: relative;
             padding: 30px;
             text-align: center;
@@ -138,6 +147,7 @@
         .body>.content {
             flex: 1 0 500px;
             background: #fff;
+            padding-right: 16px;
         }
 
         .body>.side_bar>.name {
@@ -402,7 +412,7 @@
                 <p></p>
                 <p><span class="second"><i class="fa fa-bookmark"></i> 2017年7月：</span>进入完美世界第七项目中心实习，参与射雕英雄传手游Java后端开发</p>
                 <p><span class="second">2018年7月：</span>从北科毕业，转正就职完美世界（重庆）互动科技有限公司北京分公司</p>
-                <p style="text-align: center; font-size: 12px;"><span class="second">#：</span>或许我的GitHub开源项目可以提供更多参考：<a href="github.com/zhengxiaoyao0716">github.com/zhengxiaoyao0716</a></p>
+                <p style="text-align: center; font-size: 12px;"><span class="second">#：</span>或许我的GitHub开源项目可以提供更多参考：<a href="https://github.com/zhengxiaoyao0716">github.com/zhengxiaoyao0716</a></p>
             </div>
             <div data-apply="gameJava">
                 <h3>游戏经历</h3>
