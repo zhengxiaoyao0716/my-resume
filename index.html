@@ -80,6 +80,7 @@
         <img src="./static/image/title.png">
         <br>
         <table>
+            <!-- #region 基础信息 -->
             <tbody>
                 <tr>
                     <td><i class="fa fa-user" aria-hidden="true" style="background-color: #ff5252; border-color: #ff5252;"></i></td>
@@ -101,14 +102,17 @@
                     <td>求职意向　　</td>
                     <td data-apply="gameJava">游戏Java开发工程师</td>
                     <td data-apply="frontend">淘宝技术部-前端技术</td>
+                    <td data-apply="h5Game">天猫海外前端-游戏交互</td>
                 </tr>
                 <script>
+                    // 计算工作经验
                     addEventListener('load', () => {
                         const $workExp = document.querySelector('span#workExp');
                         $workExp.textContent = new String(new Date().getFullYear() - 2018);
                     });
                 </script>
             </tbody>
+            <!-- #endregion -->
         </table>
         <footer style="display: block; width: 100%; margin-top: 3em; text-align: center;">
             <small id="srcPage" style="color: #ccc;">https://zhengxiaoyao0716.github.io/my-resume</small>
@@ -239,12 +243,14 @@
                 <img style="position: absolute; right: 0px; -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); transform:rotate(90deg);"
                     src="./static/image/banner_corner.png">
             </div>
+            <!-- #region 自我介绍 -->
             <div class="photo"><img src="./static/image/photo.jpg"></div>
             <h1 class="name">陈 正</h1>
             <span class="spell">
                 <small>Chen Zheng</small><br>
                 <span>年龄：<span id="age">24</span> (1995.7)</span>
                 <script>
+                    // 计算年龄
                     addEventListener('load', () => {
                         const $age = document.querySelector('span#age');
                         $age.textContent = new String(new Date().getFullYear() - 1995);
@@ -272,7 +278,9 @@
                     <span>北京市朝阳区</span>
                 </a>
             </div>
+            <!-- #endregion -->
             <br>
+            <!-- #region 专业技能 -->
             <h3 class="target"><i class="fa fa-book" aria-hidden="true"></i> 专业技能</h3>
             <table id="skill" class="card">
                 <style>
@@ -282,10 +290,10 @@
                 </style>
                 <tbody>
                     <tr data-skill-score="5">
-                        <td>Java, kotlin, C#</td>
+                        <td>Es, Ts, Dart, Node</td>
                     </tr>
                     <tr data-skill-score="5">
-                        <td>Es, Ts, Dart, Node</td>
+                        <td>Java, kotlin, C#</td>
                     </tr>
                     <tr data-skill-score="4">
                         <td>Go, Python, C</td>
@@ -339,6 +347,8 @@
                     });
                 </script>
             </table>
+            <p style="text-align: center; font-size: 12px;"><span class="second">#：</span>或许我的GitHub开源项目可以提供更多参考：<a href="https://github.com/zhengxiaoyao0716">github.com/zhengxiaoyao0716</a></p>
+            <!-- #endregion -->
         </div>
         <style>
             .content>div:not(:last-child) {
@@ -366,79 +376,107 @@
                 content: "";
             }
 
-            .content>div>p {
+            .content>div>div>p {
                 margin: 0 0 3px 3px;
                 padding-left: 0.5em;
             }
 
-            .content>div>p:not(:last-child) {
+            .content>div>div>p:not(:last-child) {
                 padding-bottom: 3px;
                 border-bottom: 1px solid #eee;
             }
 
-            .content>div>p>.second {
-                color: #666;
+            .content>div>div>p>.second {
+                color: #333;
+            }
+            .content a {
+                color: #333;
             }
         </style>
         <div class="content">
             <div>
                 <h3>教育背景</h3>
-                <p><span class="second">学校：</span>北京科技大学　　　　　<span class="second">就读时间：</span> 2014.8 - 2018.6</p>
-                <p><span class="second">学院：</span>计算机与通信工程　　　　　<span class="second">专业：</span>计算机科学与技术</p>
-                <p><span class="second">学历：</span>本科　　　　　<span class="second">生源地：</span>新疆　　　　　<span class="second">祖籍：</span>安徽</p>
+                <div>
+                    <p><span class="second">学校：</span>北京科技大学　　　　　<span class="second">就读时间：</span> 2014.8 - 2018.6</p>
+                    <p><span class="second">学院：</span>计算机与通信工程　　　　　<span class="second">专业：</span>计算机科学与技术</p>
+                    <p><span class="second">学历：</span>本科　　　　　<span class="second">生源地：</span>新疆　　　　　<span class="second">祖籍：</span>安徽</p>
+                </div>
             </div>
             <div>
-                <h3>校内职务</h3>
-                <p>北科棍舞双节棍社副社长　　　　　<span class="second">时间：</span>2016.5 -2017.5</p>
-                <p><span class="second">职务描述： </span>组织社团活动，联络社团事宜，参加双节棍表演等</p>
+                <h3>在校荣誉</h3>
+                <div style="font-size: 0.9em;">
+                    <p><span class="second">2016.5-2017.5</span>　　北科棍舞双节棍社 副社长</p>
+                    <p><span class="second">2016.12　　　</span>　 “北科-锐格”杯程序设计创新大赛 一等奖</p>
+                    <p><span class="second">2015.08　　　</span>　 “创新杯”软件设计与开发大赛 一等奖</p>
+                    <p><span class="second">2015.07　　　</span>　　北京高校第七届双节棍大赛 优胜奖</p>
+                    <p><span class="second">2014.08　　　</span>　　北京科技大学2014级本科生军训优秀学员</p>
+                </div>
             </div>
             <div>
-                <h3>获得荣誉</h3>
-                <p><span class="second">2016.12</span>　　“北科-锐格”杯程序设计创新大赛一等奖</p>
-                <p><span class="second">2015.08</span>　　“创新杯”软件设计与开发大赛一等奖</p>
-                <p><span class="second">2015.07</span>　　北京高校第七届双节棍大赛优胜奖</p>
-                <p><span class="second">2014.08</span>　　北京科技大学2014级本科生军训优秀学员</p>
-            </div>
-            <div>
-                <h3>项目经验</h3>
-                <p><span class="second"><i class="fa fa-bookmark"></i> 2015年暑期：</span>加入北科计通索奥科技中心，跟着学长们一边学习技术一边兼职创业</p>
-                <p><span class="second">2015年8月2日-8月25日：</span>“互联网+校园食堂”大一暑期社会实践，负责客户端（Android）开发，成果：今吃啥校园食堂电子菜单</p>
-                <p><span class="second">2016年6月-2017年1月：</span>参加SRTP创业比赛，负责服务端（Python）开发，对接微信后台，成果：北科手抓饼预约平台</p>
-                <p></p>
-                <p><span class="second"><i class="fa fa-bookmark"></i> 2016年7月：</span>加入学长的创业公司实习（北京满井智信科技发展有限责任公司）</p>
-                <p><span class="second">2016年暑期：</span>社会实践微足迹系统，主要由和朋友两人一个暑假完成，已在北科大上线运营。独立完成社会实践素材共享发布平台</p>
-                <p><span class="second">2016年11月：</span>非教师考核系统，我带着几个新人开发完成，已在北科大部分学院上线运营</p>
-                <p><span class="second">2016年暑期-2017年：</span>参与北科大新版教务管理系统部分模块（Java）的开发</p>
-                <p></p>
-                <p><span class="second"><i class="fa fa-bookmark"></i> 2017年7月：</span>进入完美世界第七项目中心实习，参与射雕英雄传手游Java后端开发</p>
-                <p><span class="second">2018年7月：</span>从北科毕业，转正就职完美世界（重庆）互动科技有限公司北京分公司</p>
-                <p style="text-align: center; font-size: 12px;"><span class="second">#：</span>或许我的GitHub开源项目可以提供更多参考：<a href="https://github.com/zhengxiaoyao0716">github.com/zhengxiaoyao0716</a></p>
+                <h3>项目经历</h3>
+                <div>
+                    <p><small class="second"><i class="fa fa-bookmark"></i> 2015年暑期 - 加入 </small>北科大计通学院 索奥科技中心</p>
+                    <p><small class="second">　- “互联网+校园食堂”大一暑期社会实践：今吃啥校园食堂电子菜单</small></p>
+                    <p><small class="second">　-　SRTP创业比赛：北科手抓饼预约平台</small></p>
+                    <p><small class="second"><i class="fa fa-bookmark"></i> 2016年7月 - 进入 </small>北京满井智信科技发展有限责任公司<small class="second"> 实习</small></p>
+                    <p><small class="second">　-　社会实践微足迹系统，已在北科大上线运营</small></p>
+                    <p><small class="second">　-　非教师考核系统，已在北科大部分学院上线运营</small></p>
+                    <p><small class="second">　-　参与北科大新版教务管理系统部分模块（Java）的开发</small></p>
+                    <p><small class="second"><i class="fa fa-bookmark"></i> 2017年7月 - 进入 </small>完美世界第七项目中心（星云工作室）<small class="second"> 实习</small></p>
+                    <p><small class="second">　-　射雕英雄传手游、封龙战记手游 后端开发</small></p>
+                    <p><small class="second">　-　倚天屠龙记手游 后期版本维护</small></p>
+                    <p><small class="second"><i class="fa fa-bookmark"></i> 2018年7月 - 入职 </small>完美世界互动科技有限公司 北京分公司</p>
+                    <p><small class="second">　-　新笑傲江湖手游 后端开发</small></p>
+                </div>
             </div>
             <div data-apply="gameJava">
                 <h3>游戏经历</h3>
-                <p><span class="second">喜欢的游戏：</span>塞尔达传说，Minecraft，仙剑奇侠传，Steins;Gate</p>
-                <p><span class="second">喜欢的类型：</span>开放世界、仙侠|日式RPG、生存工艺、AVG、独立游戏</p>
-                <p>
-                    <span>　　总得来说，我玩过的游戏很多，各种类型也都有尝试，从小时候的红白机到现在的次世代3A大作，从主机掌机到手游网游。游戏让我体会到了计算机的力量，尤其是沙盒游戏和VR的兴起，让我看到了虚拟世界的曙光。</span><br>
-                    <span>　　完美世界的几场宣讲会，让我深切认识到了完美对游戏的态度，以及完美深厚的实力。我希望能加入完美世界，进入游戏行业，也做出带给他人快乐与感动的，富有文化气息的游戏。</span>
-                </p>
+                <div>
+                    <p><span class="second">喜欢的游戏：</span>塞尔达传说，Minecraft，仙剑奇侠传，Steins;Gate</p>
+                    <p><span class="second">喜欢的类型：</span>开放世界、仙侠|日式RPG、生存工艺、AVG、独立游戏</p>
+                    <p>
+                        <span>　　总得来说，我玩过的游戏很多，各种类型也都有尝试，从小时候的红白机到现在的次世代3A大作，从主机掌机到手游网游。游戏让我体会到了计算机的力量，尤其是沙盒游戏和VR的兴起，让我看到了虚拟世界的曙光。</span><br>
+                        <span>　　完美世界的几场宣讲会，让我深切认识到了完美对游戏的态度，以及完美深厚的实力。我希望能加入完美世界，进入游戏行业，也做出带给他人快乐与感动的，富有文化气息的游戏。</span>
+                    </p>
+                </div>
             </div>
             <div data-apply="frontend">
                 <h3>自我评价</h3>
-                <p>　　大一开始跟随社团学长磨砺技术，大二加入创业公司兼职，大三进入完美世界实习，大四毕业即转正，我觉得我自己是一个不断进取不断成长的人。</p>
-                <p>　　然而从17年进入完美至今两年多了，北京打拼的确不容易，游戏行业也不景气，家里劝我离开北京，回南方换一份离家更近的工作，说实话让我感觉到了些许迷惘。</p>
-                <p>　　就在这时，我有幸得到了贵团队内推机会，我是一个对技术有追求的人，而淘宝的技术业界有口皆碑，了解到淘宝前端智能化与FaaS云函数等方面布局，我觉得这是个面向未来的非常正确的方向，我希望能加入淘宝前端技术团队来实现更好的个人发展。</p>
+                <div>
+                    <p>　　大一开始跟随社团学长磨砺技术，大二加入创业公司兼职，大三进入完美世界实习，大四毕业即转正，我觉得我自己是一个不断进取不断成长的人。</p>
+                    <p>　　然而从17年进入完美至今两年多了，北京打拼的确不容易，游戏行业也不景气，家里劝我离开北京，回南方换一份离家更近的工作，说实话让我感觉到了些许迷惘。</p>
+                    <p>　　就在这时，我有幸得到了贵团队内推机会，我是一个对技术有追求的人，而淘宝的技术业界有口皆碑，了解到淘宝前端智能化与FaaS云函数等方面布局，我觉得这是个面向未来的非常正确的方向，我希望能加入淘宝前端技术团队来实现更好的个人发展。</p>
+                </div>
+            </div>
+            <div data-apply="h5Game">
+                <h3>H5游戏Demo</h3>
+                <div>
+                    <p>2D (Pixi.js, Phaser.js)</p>
+                    <p><small class="second">　基于Phaser引擎写的H5小游戏（撑过序章才是正片）: <br>　　<a title="phaser_game_demo" href="https://zhengxiaoyao0716.github.io/phaser_game_demo/">https://zhengxiaoyao0716.github.io/phaser_game_demo/</a></small></p>
+                    <p><small class="second">　工作室团建龙舟分组: <br>　　<a title="reactive-game-engine" href="https://zhengxiaoyao0716.github.io/reactive-game-engine">https://zhengxiaoyao0716.github.io/reactive-game-engine</a></small></p>
+                    <p><small class="second">　函数响应式H5游戏引擎探索: <br>　　<a title="furegame" href="https://zhengxiaoyao0716.github.io/furegame/">https://zhengxiaoyao0716.github.io/furegame/</a></small></p>
+                    <p>3D (Three.js)</p>
+                    <p><small class="second">　基于Three.js的“全息”电子宠物: <br>　　<a title="PixelPet3D" href="https://github.com/zhengxiaoyao0716/PixelPet3D">https://github.com/zhengxiaoyao0716/PixelPet3D</a></small></p>
+                    <p><small class="second">　名称有点中二，简单来说前端部分是个类Minecraft的沙盒建筑游戏: <br>　　<a title="ZWorld" href="https://github.com/zhengxiaoyao0716/zworld">https://github.com/zhengxiaoyao0716/zworld</a></small></p>
+                    <p>原生Dom</p>
+                    <p><small class="second">　记忆翻牌游戏，帮学妹做的请勿外传: <br>　　<a title="memo-match" href="https://zhengxiaoyao0716.github.io/memo-match/index.html">https://zhengxiaoyao0716.github.io/memo-match/index.html</a></small></p>
+                    <p><small class="second">　H5抽奖工具，工作室庆功宴用的: <br>　　<a title="wanmei-lottery" href="https://zhengxiaoyao0716.github.io/wanmei-lottery/">https://zhengxiaoyao0716.github.io/wanmei-lottery/</a></small></p>
+                    <p><small class="second">　博客宠物挂件，远古老物年久失修: <br>　　<a title="OwO" href="https://github.com/zhengxiaoyao0716/OwO">https://github.com/zhengxiaoyao0716/OwO</a></small></p>
+                </div>
             </div>
         </div>
     </div>
+    <!-- #region 根据求职意向渲染定制内容 -->
     <style id="apply">*[data-apply]:not([data-apply="gameJava"]) { display: none; }</style>
     <script>
+        // https://zhengxiaoyao0716.github.io/my-resume/?apply=${求职意向}
         addEventListener('load', () => {
             const apply = (v => v && v[2])(location.search.substr(1).match(/(^|&)apply=([^&]*)(&|$)/));
             const $apply = document.querySelector('style#apply');
             if (apply) $apply.innerHTML = `*[data-apply]:not([data-apply="${apply}"]) { display: none; }`;
         });
     </script>
+    <!-- #endregion -->
 </body>
 
 </html>
